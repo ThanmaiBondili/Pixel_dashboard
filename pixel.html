@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixelShop Dashboard</title>
+  <link rel="stylesheet" href="styles/pixel.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="logo">🟧 PixelShop</div>
+      <nav>
+        <a href="#" class="active">Dashboard</a>
+        <a href="#">Products</a>
+        <a href="#">Customers</a>
+        <a href="#">Orders</a>
+        <a href="#">Shipments</a>
+        <a href="#">Transactions</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+     <header class="header">
+  <button class="menu-btn" id="menu-btn">☰</button>
+  <h2>Overview</h2>
+  <input type="text" placeholder="Search..." />
+
+  <div class="header-icons">
+    <button class="icon-btn">
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+</svg>
+    </button>
+    <button class="icon-btn">
+       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+</svg>
+    </button>
+    <div class="profile">
+      <img src="images/Honey.jpeg" alt="Profile Picture" />
+    </div>
+  </div>
+</header>
+
+
+      <section class="grid-container">
+        <!-- Total Revenue Chart -->
+        <div class="card chart">
+          <!-- <h3>Total Revenue</h3>-->
+       
+
+         <div>
+            <img src="images/graph.png" style="align-self:safe;" style="width:fit-content; height: 300px;"></img>
+          </div>
+  
+        </div>
+
+        <!-- Customers Section -->
+        <div class="card customers">
+          <h3>Customers</h3>
+          <h4><small style="font-size: small; font-style: italic;">Information about Customers</small>
+          </h4>
+
+          <div class="donut-container">
+            <div class="donut-wrap">
+              <div class="donut purple" data-percent="85"></div>
+              <p>Current</p>
+            </div>
+
+            <div class="donut-wrap">
+              <div class="donut orange" data-percent="66"></div>
+              <p>New</p>
+            </div>
+
+            <div class="donut-wrap">
+              <div class="donut red" data-percent="90"></div>
+              <p>Target</p>
+
+            </div>
+            <div class="donut-wrap">
+              <div class="donut gray" data-percent="30"></div>
+              <p>Recent</p>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Top Products -->
+        <div class="card products">
+          <div class="tiny-cards">
+            <div class="tiny">
+              <p>Total Visits</p><span>10.8k</span>
+            </div>
+            <div class="tiny">
+              <p>Total Sales</p><span>108.3k</span>
+            </div>
+            <div class="tiny">
+              <p>Total Orders</p><span>28.2k</span>
+            </div>
+            <div class="tiny">
+              <p>New Customers</p><span>6.1k</span>
+            </div>
+          </div>
+
+          <!-- Top Products -->
+          <div class="top-products">
+            <h4>Top Products</h4>
+
+            <div class="prod shaded">
+              <img src="images/6441107_sd.jpg" alt="Samsung S20">
+              <div class="prod-content">
+                <div class="prod-info">
+                  <strong>Samsung S20 128GB</strong><br>
+                  <small>Pink - 50 orders</small>
+                </div>
+                <div class="prod-stats">
+                  <div><span>Inventory</span><span>700</span></div>
+                  <div><span>Scale</span><span>81000</span></div>
+                  <div><span>Price</span><span>₹80,000</span></div>
+                  <div><span>Today</span><span>876934</span></div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="prod shaded">
+              <img src="images/blackmobile.jpg" alt="Samsung S21">
+              <div class="prod-content">
+                <div class="prod-info">
+                  <strong>Samsung S21 256GB</strong><br>
+                  <small>Black - 20 orders</small>
+                </div>
+                <div class="prod-stats">
+                  <div><span>Inventory</span><span>280</span></div>
+                  <div><span>Scale</span><span>81000</span></div>
+                  <div><span>Price</span><span>₹79,000</span></div>
+                  <div><span>Today</span><span>876954</span></div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- Stats Overview -->
+        <div class="card stats">
+          <h3>Stats Overview</h3>
+          <div class="stat">
+            <span>Women</span>
+            <div class="progress">
+              <div class="fill" style="width: 63%"></div>
+            </div>
+          </div>
+          <div class="stat">
+            <span>Men</span>
+            <div class="progress">
+              <div class="fill red" style="width: 86%"></div>
+            </div>
+          </div>
+          <div class="stat">
+            <span>Kids</span>
+            <div class="progress">
+              <div class="fill purple" style="width: 30%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Sidebar toggle for mobile
+    const sidebar = document.getElementById('sidebar');
+    const menuBtn = document.getElementById('menu-btn');
+    menuBtn.addEventListener('click', () => sidebar.classList.toggle('active'));
+
+    // Donut progress rendering
+    document.querySelectorAll('.donut').forEach(donut => {
+      const percent = donut.dataset.percent;
+      const color = getComputedStyle(donut).getPropertyValue('--clr');
+      donut.innerHTML = `<span>${percent}%</span>`;
+      donut.style.background = `conic-gradient(${color} ${percent}%, #e5e7eb ${percent}%)`;
+    });
+
+  </script>
+</body>
+
+</html>
